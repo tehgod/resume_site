@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shelby Homelab</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="action.js"></script>
+        <script type="text/javascript">function submit_action(){action()}</script>
+    </head>
+    <body>
+        <nav>
+            <div id="navigation-bar">
+                <a href="employment.html">Employment History</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <header>
+            <div>
+                <h1>Contact me</h1>
+            </div>
+        </header>
+        <main>
+            <div class="hidden form-submitted"><p>Form Submitted</p></div>
+            
+            <div class="form-unsubmitted">
+                <form>
+                
+                    <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." rows="3" cols="25"></textarea>
+                    </div>
+                    <div>
+                    <button id="test" type="button" onclick="submit_action()">Submit</button>
+                    </div>
+                </form>
+            </div> 
+        </main>
+        <footer>
+            <div>
+                <a href="mailto:shelby@shelbyhomelab.com">shelby@shelbyhomelab.com</a>
+            </div>
+        </footer>
+    </body>
+    
+</html> 
