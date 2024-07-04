@@ -1,6 +1,5 @@
 <!-- Author: Shelby Martin
-File Name: about.html
-Today's Date: 07/04/2024 -->
+File Name: projects.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +8,9 @@ Today's Date: 07/04/2024 -->
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -61,6 +63,17 @@ Today's Date: 07/04/2024 -->
         </table>
     </main>
     <footer>
+        <div>
+            <a href="mailto:shelby@shelbyhomelab.com">shelby@shelbyhomelab.com</a>
+        </div>
+        <audio controls autoplay id="audio">
+            <source src="audio/background_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio> 
     </footer>
     </body>
+    <script>
+        var audio = document.getElementById("audio");
+        audio.volume = 0.15;
+    </script>
 </html> 
